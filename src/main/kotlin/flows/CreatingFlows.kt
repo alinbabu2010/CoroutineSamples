@@ -26,10 +26,10 @@ fun main() {
     }
 }
 
-fun sendNumbers() = flow {
+private fun sendNumbers() = flow {
     for (i in 1..10) emit(i)
 }
 
-val listOfNumbers = listOf(11, 12, 13, 14, 15, 16, 17, 18, 19, 20).asFlow()
+private val listOfNumbers = listOf(11, 12, 13, 14, 15, 16, 17, 18, 19, 20).asFlow()
 
-val flowOfNumbers = flowOf("One", "Two", "Three")
+private val flowOfNumbers = flowOf("One", "Two", "Three")

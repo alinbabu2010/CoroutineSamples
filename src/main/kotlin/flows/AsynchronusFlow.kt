@@ -15,7 +15,7 @@ fun main() {
     }
 }
 
-fun sendPrimes(): Flow<Int> = flow {
+private fun sendPrimes(): Flow<Int> = flow {
     val primesList = listOf(2, 3, 5, 7, 11, 13, 17, 19, 23, 29)
     primesList.forEach {
         delay(it * 100L)
