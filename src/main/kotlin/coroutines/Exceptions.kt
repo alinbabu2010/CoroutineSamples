@@ -1,3 +1,5 @@
+package coroutines
+
 import kotlinx.coroutines.*
 
 @DelicateCoroutinesApi
@@ -5,7 +7,7 @@ fun main() {
 
     runBlocking {
 
-        val myHandler = CoroutineExceptionHandler { coroutineContext, throwable ->
+        val myHandler = CoroutineExceptionHandler { _, throwable ->
             println("Exception handled: ${throwable.localizedMessage}")
         }
 
